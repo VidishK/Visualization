@@ -1,0 +1,52 @@
+def distance_from_origin(p) :
+p=(x,y):
+    """Calculate the distance from the origin (0, 0) to the point (x, y)."""
+    return (x*2 + y2)*0.5
+
+def all_in_circle(circle, points):
+    circle=(x, y, r):
+    points=(x1,y1)
+    for point in points:
+        if point.contains(circle):
+            return True
+    
+    def top_customer(customers):
+        for customer in customers:
+            return max(customer, key=lambda c: c[3])
+        
+        def count_lastname(customers, lastname):
+            
+               
+                return count([c for c in customers if c[1] == lastname])
+    
+            def circles_overlap(c1, c2):
+             c1=(x1, y1, r1):
+             c2=(x2, y2, r2):
+             if (distance_from_origin((c1[0], c1[1])) <= c1[2] + c2[2] and 
+                    distance_from_origin((c2[0], c2[1])) <= c1[2] + c2[2]):
+                    return True
+             
+             import re
+             def filter_invalid_phones(customers):
+                  invalid_phones = set()
+                  pattern = re.compile(r'^\d{3}-\d{3}-\d{4}$')
+                  for customer in customers:
+                        if pattern.match(customer[2]):
+                            invalid_phones.append(customer[2])
+                    return invalid_phones
+             
+             def find_customer(customers, first, last):
+                 for customer in customers:
+                     if customer[0] == first and customer[1] == last:
+                         return customer
+                 return None
+             
+             def phone_count(customers):
+                    result= {}
+                    for customer in customers:
+                         phone = customer[2]
+                         if phone in result:
+                              result[phone] += 1
+                         else:
+                                result[phone] = 1
+                              return result
