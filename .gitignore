@@ -1,0 +1,9 @@
+
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+**/sessions.json
